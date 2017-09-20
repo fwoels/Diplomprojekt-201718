@@ -1,0 +1,151 @@
+\documentclass[medt,2017]{hitda}
+
+\title{Filmproduktionen für das Unternehmen „WWLA-Wärme.Wasser.Lüftungs-Anlagen GesmbH“ zu Online-Marketingzwecken}
+
+\begin{document}
+
+\begin{titlepage}
+\author{Michael Jindra}{5AHIT}{Regie, Licht}{Erich Trenner}
+\author{Nemanja Filipovic}{5BHIT}{Kamera}{Erich Trenner}
+\author{Mario Ottomaier}{5BHIT}{Preproduction}{Erich Trenner}
+\author{Felix W\"ols}{5AHIT}{Postproduction}{Erich Trenner}
+\end{titlepage}
+
+% Eidesstattliche Erklaerung
+\declaration
+
+\begin{abstract-de}
+deutscher Abstract hier
+\end{abstract-de}
+
+\begin{abstract-en}
+englischer Abstract hier
+\end{abstract-en}
+
+\tableofcontents
+
+\chapter{Einführung}
+\begincontent
+\secauthor{Max Meier}
+\section{Motivation}
+Literaturverweise: \cite{book} bzw \cite{article, incollection, inbook}
+
+Abbildung~\ref{fig:sourcecode} zeigt, wie man formatierten Sourcecode einbinden kann.
+\begin{figure}[h]
+\begin{lstlisting}
+from django.db import models
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+\end{lstlisting}
+\caption{Sourcecode von \texttt{models.py}}
+\label{fig:sourcecode}
+\end{figure}
+
+Abbildung~\ref{fig:table} zeigt eine Tabelle.
+
+\begin{figure}\centering
+\begin{tabular}{r|lll}
+\toprule
+Produkt & Preis & Nutzen & Aussehen\\
+\midrule
+MS Office & 100 & 0.5 & 1\\
+LibreOffice & 0 & 0.4 & 0.5 \\
+\LaTeX & 0 & 1 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Eine Tabelle}
+\label{fig:table}
+\end{figure}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tempus ante. Praesent egestas, quam in ornare mollis, felis purus fringilla elit, vel aliquam massa nisi quis nisl. Pellentesque augue nisi, porta non nunc at, dignissim rutrum massa. Sed tempus finibus neque, eu venenatis purus consectetur sed. Vestibulum efficitur, felis non maximus porta, sem augue mattis diam, id feugiat enim neque ut nibh. Quisque at sodales ante, non volutpat enim. In dolor lectus, pulvinar eu urna ullamcorper, varius semper ex. Pellentesque pharetra vestibulum eros ut auctor. Nam ut hendrerit quam. Cras faucibus neque id consequat tincidunt.
+
+\cite{testurl}
+
+Listen:
+\begin{itemize}
+	\item ungeordnete Listen mit \texttt{itemize}
+	\item Wörter hervorheben mit \emph{emph}
+\end{itemize}
+\begin{enumerate}
+	\item geordnete listen mit \texttt{itemize}
+	\item wörter hervorheben mit \emph{emph}
+\end{enumerate}
+\begin{description}
+	\item[description] erzeugt Listen von Definitionen
+	\item[itemize] erzeugt ungeordnete Listen
+	\item[enumerate] erzeugt geordnete Listen
+\end{description}
+
+nunc auctor auctor dolor sit amet varius. duis dapibus sodales nisi a vehicula. quisque consequat interdum ornare. vestibulum tristique vel felis nec tempus. duis mollis velit quis arcu ornare, nec lacinia purus maximus. nulla vel ornare nibh. mauris nec massa imperdiet, faucibus mauris ut, ultrices ipsum. nulla condimentum ex eget est fermentum fringilla. ut aliquam ac risus luctus fringilla. integer convallis dui tellus, sit amet accumsan lectus vehicula sed. vestibulum libero risus, feugiat a imperdiet vitae, ultricies ac erat.
+
+abbildungen wie zb~\ref{fig:tgm} und~\ref{fig:htl} lassen sich auch nebeneinander setzen:
+
+\begin{figure}[h]
+\centering
+\subfloat[TGM\label{fig:tgm}]{
+	\includegraphics[width=5cm]{hitda/logo_tgm}
+}
+\hspace{3em}
+\subfloat[HTL\label{fig:htl}]{
+	\includegraphics[width=5cm]{hitda/logo_htl}
+}
+\caption{Logos}
+
+\end{figure}
+
+\newglossaryentry{computer}
+{
+  name=computer,
+  description={is a programmable machine that receives input,
+               stores and manipulates data, and provides
+               output in a useful format}
+}
+
+
+Glossare lassen sich mittels \verb|newglossaryentry| einbinden: 
+kleingeschrieben \gls{computer} oder groß: \Gls{computer}.
+
+
+\section{Aufgabenstellung}
+\section{Ziel}
+
+\chapter{Projektmanagement}
+\secauthor{Moritz Muster}
+\section{Methoden}
+\section{Team}
+\section{Aufgabenteilung}
+\section{Terminplaning}
+
+\chapter{Machbarkeitsstudie}
+\secauthor{Ano Nym}
+\section{Frontend}
+\section{Datenbank}
+
+\chapter{Projektumsetzung}
+\section{Use-Cases}
+\section{Datenakquirierung}
+
+\chapter{Konklusion}
+\section{Ausblick}
+\section{Zusammenfassung}
+
+\printglossaries
+
+\listoffigures
+
+\bibliography{referenzen}{}
+\nosecauthor
+\bibliographystyle{plain}
+
+\chapter{Anhang}
+ 
+\end{document}
