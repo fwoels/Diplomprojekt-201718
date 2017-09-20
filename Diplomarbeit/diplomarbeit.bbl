@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{article}
+Peter Adams.
+\newblock The title of the work.
+\newblock {\em The name of the journal}, 4(2):201--213, 7 1993.
+\newblock An optional note.
+
+\bibitem{book}
+Peter Babington.
+\newblock {\em The title of the work}, volume~4 of {\em 10}.
+\newblock The name of the publisher, The address, 3 edition, 7 1993.
+\newblock An optional note.
+
+\bibitem{inbook}
+Peter Eston.
+\newblock {\em The title of the work}, volume~4 of {\em 5}, chapter~8, pages
+  201--213.
+\newblock The name of the publisher, The address of the publisher, 3 edition, 7
+  1993.
+\newblock An optional note.
+
+\bibitem{incollection}
+Peter Farindon.
+\newblock The title of the work.
+\newblock In The editor, editor, {\em The title of the book}, volume~4 of {\em
+  5}, chapter~8, pages 201--213. The name of the publisher, The address of the
+  publisher, 3 edition, 7 1993.
+\newblock An optional note.
+
+\bibitem{testurl}
+Vor Nach.
+\newblock {Titel}.
+\newblock \url{http://www.abc.com}, 2008.
+\newblock [Online; accessed 19-July-2016].
+
+\end{thebibliography}
